@@ -2,6 +2,8 @@ package racingcar;
 
 public class Application {
     public static void main(String[] args) {
-        // TODO: 프로그램 구현
+        GameConfigurator configurator = new GameConfigurator();
+        RacingGame racingGame = configurator.createRacingGame();
+        racingGame.run();
     }
 }
