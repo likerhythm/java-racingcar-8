@@ -1,7 +1,8 @@
-package racingcar;
+package racingcar.view;
 
 import java.util.List;
 import java.util.OptionalInt;
+import racingcar.dto.MoveResult;
 
 public class OutputView {
 

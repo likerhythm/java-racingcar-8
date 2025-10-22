@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import racingcar.dto.MoveResult;
+import racingcar.view.OutputView;
 
 public class OutputViewTest {
 

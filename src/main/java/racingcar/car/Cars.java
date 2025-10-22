@@ -1,6 +1,7 @@
-package racingcar;
+package racingcar.car;
 
 import java.util.List;
+import racingcar.dto.MoveResult;
 
 public class Cars {
 

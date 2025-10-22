@@ -1,5 +1,7 @@
 package racingcar;
 
+import racingcar.generator.RandomIntegerGenerator;
+
 public class Driver {
 
     private static final int MIN_VALUE_TO_MOVE = 4;

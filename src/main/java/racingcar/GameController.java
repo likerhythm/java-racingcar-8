@@ -2,6 +2,8 @@ package racingcar;
 
 import java.util.ArrayList;
 import java.util.List;
+import racingcar.car.Cars;
+import racingcar.dto.MoveResult;
 
 public class GameController {
 

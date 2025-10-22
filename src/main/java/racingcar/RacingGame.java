@@ -1,6 +1,8 @@
 package racingcar;
 
 import java.util.List;
+import racingcar.dto.MoveResult;
+import racingcar.view.OutputView;
 
 public class RacingGame {
 
