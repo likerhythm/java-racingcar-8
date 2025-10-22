@@ -15,7 +15,7 @@ public class GameConfigurator {
         String carNames = inputView.printCarNameInputGuide();
         RandomIntegerGenerator generator = new DefaultRandomIntegerGenerator();
         Driver driver = new Driver(generator);
-        List<Car> cars = Arrays.stream(carNames.split(", ")).map(cn -> new Car(cn, driver)).toList();
+        List<Car> cars = Arrays.stream(carNames.split(",")).map(cn -> new Car(cn, driver)).toList();
         try {
             int gameStage = Integer.parseInt(inputView.printGameStageInputGuide());
             GameController gameController = new GameController(gameStage, new Cars(cars));
