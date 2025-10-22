@@ -38,14 +38,13 @@ public class OutputViewTest {
         gameResult2.add(new MoveResult("사용자3", 4));
 
         Assertions.assertEquals("""
-                실행 결과
+                \n실행 결과
                 사용자1 : \n사용자2 : --
                 사용자3 : ---
                 
                 사용자1 : -
                 사용자2 : --
                 사용자3 : ----
-                
                 """, outputView.printIntermediateResult(List.of(gameResult1, gameResult2)));
     }
 }
