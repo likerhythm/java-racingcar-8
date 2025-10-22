@@ -22,15 +22,8 @@ public class Car {
         }
     }
 
-    public void move() {
+    public MoveResult move() {
         this.moveCount += driver.run();
-    }
-
-    public String getName() {
-        return this.name;
-    }
-
-    public int getMoveCount() {
-        return this.moveCount;
+        return new MoveResult(this.name, this.moveCount);
     }
 }
