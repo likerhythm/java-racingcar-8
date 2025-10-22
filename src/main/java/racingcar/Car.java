@@ -3,13 +3,13 @@ package racingcar;
 public class Car {
 
     private String name;
-    private int moveCount;
+    private int position;
     private Driver driver;
 
     public Car(String name, Driver driver) {
         validateName(name);
         this.name = name;
-        this.moveCount = 0;
+        this.position = 0;
         this.driver = driver;
     }
 
@@ -23,7 +23,7 @@ public class Car {
     }
 
     public MoveResult move() {
-        this.moveCount += driver.run();
-        return new MoveResult(this.name, this.moveCount);
+        this.position += driver.run();
+        return new MoveResult(this.name, this.position);
     }
 }
