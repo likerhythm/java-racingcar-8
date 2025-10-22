@@ -4,11 +4,13 @@ public class Car {
 
     private String name;
     private int moveCount;
+    private Driver driver;
 
-    public Car(String name) {
+    public Car(String name, Driver driver) {
         validateName(name);
         this.name = name;
         this.moveCount = 0;
+        this.driver = driver;
     }
 
     private void validateName(String name) {
@@ -20,11 +22,8 @@ public class Car {
         }
     }
 
-    public void move(int value) {
-        if (value < 0) {
-            throw new IllegalArgumentException("자동차는 후진할 수 없습니다.");
-        }
-        this.moveCount += value;
+    public void move() {
+        this.moveCount += driver.run();
     }
 
     public String getName() {
