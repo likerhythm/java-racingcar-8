@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.List;
 import racingcar.car.Car;
 import racingcar.car.Cars;
-import racingcar.generator.DefaultRandomIntegerGenerator;
-import racingcar.generator.RandomIntegerGenerator;
+import racingcar.number_generator.DefaultRandomIntegerGenerator;
+import racingcar.number_generator.RandomIntegerGenerator;
 import racingcar.view.InputView;
 
 public class GameConfigurator {

@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import racingcar.car.Car;
 import racingcar.dto.MoveResult;
-import racingcar.generator.DefaultRandomIntegerGenerator;
+import racingcar.number_generator.DefaultRandomIntegerGenerator;
 
 public class CarTest {
 

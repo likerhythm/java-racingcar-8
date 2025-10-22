@@ -1,6 +1,6 @@
 package racingcar;
 
-import racingcar.generator.RandomIntegerGenerator;
+import racingcar.number_generator.RandomIntegerGenerator;
 
 public class Driver {
 
