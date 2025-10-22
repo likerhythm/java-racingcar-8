@@ -24,6 +24,11 @@ public class CarTest {
     }
 
     @Test
+    void 자동차_이름은_길이가_0일_수_없습니다() {
+        Assertions.assertThrows(IllegalArgumentException.class, () -> new Car("", driver));
+    }
+
+    @Test
     void 자동차는_후진할_수_없습니다() {
         Assertions.assertTrue(() -> {
             Car car = new Car("이름", driver);
