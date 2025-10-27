@@ -26,4 +26,8 @@ public class Car {
         this.position += driver.run();
         return new MoveResult(this.name, this.position);
     }
+
+    public String getName() {
+        return this.name;
+    }
 }
